@@ -60,24 +60,16 @@
         display: flex;
         flex-direction: column;
     }
-    .input {
-        background-color: var(--text-input-field);
-        border: none;
-        border-radius: 8px;
-        height: 30px;
-        font-size: var(--md);
-        padding: 6px;
-        margin-bottom: 12px;
+    .value {
+        color: var(--vegry-light-pink);
+        font-size: var(-md);
+        margin: 8px 0 32px 0;
     }
-    .input-name,
-    .input-email,
-    .input-password {
-        margin-bottom: 22px;
-    }
-    .primary-button{
-        border: none;
-        color: var(--text-input-field);
-        background-color: var(--black);
+    
+    .secondary-button {
+        border: 1px var(--black) solid;
+        color: var(--black);
+        background-color: var(--white);
         font-weight: bold;
         height: 50px;
         padding: 10px;
@@ -90,6 +82,10 @@
     .login-button {
         margin-top: 14px;
         margin-bottom: 30px;
+    }
+    .login-button:hover {
+        background-color: var(--black);
+        color: var(--text-input-field);
     }
     @media (max-width:640px){
         .form {
@@ -116,17 +112,17 @@
           <form action="/" class="form">
             <div class="">
                 <label for="text" class="label">Name</label>
-                <input type="text" id="name" placeholder="Miguel Noboa" class="input input-password">
+                <p class="value">Miguel Noboa</p>
                 
                 <label for="text" class="label">Email address</label>
-                <input type="text" id="email" placeholder="noboamiguel9@gmail.com" class="input input-password">
+                <p class="value">noboamiguel9@gmail.com</p>
         
                 <label for="new-password" class="label">Password</label>
-                <input type="password" id="new-password" placeholder="*********" class="input input-password">
+                <p class="value">********</p>
         
                 
             </div>
-            <input type="submit" value="Create" class="primary-button login-button">
+            <input type="submit" value="Edit" class="secondary-button login-button">
            
           </form>
         </div>
